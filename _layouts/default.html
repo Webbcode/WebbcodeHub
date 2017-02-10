@@ -12,6 +12,7 @@
 
 function startGame() {
     myGameArea.start();
+	player = new player(100, 100, 50, 50);
 }
 
 var myGameArea = {
@@ -33,7 +34,9 @@ function player(x, y, width, height){
 }
 		
 		function prototype.player.render(){
-			ctx = myGameArea.getContex();
+			ctx = myGameArea.context;
+			ctx.fillStyle = "blue"
+			ctx.ctx.fillRect(this.x, this.y, this.width, this.height);
 			
 		}
 
