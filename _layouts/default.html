@@ -3,10 +3,39 @@
 <head>
 	<title>ron's realm website</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	<script src="script.js"></script>
 	<!--<link rel="shortcut icon" href="/Realm-website/images/Big_Oak_Log.png" type="image/png">-->
 </head>
 <body>
+	<canvas id="myCanvas" width="400" height="400"></canvas>
 	
+	<script>
+
+function startGame() {
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    	}
+}
+
+function player(x, y, width, height){
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+	
+}
+		
+		function prototype.player.render(){
+			ctx =
+		}
+
+</script>
 </body>
 </html>
