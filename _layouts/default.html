@@ -124,7 +124,7 @@ function updateGameArea() {
             myObstacles.push(new component(10, height, "green", x, 0));
             myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
 	    myscore.score += 1;
-	    mySpeed -= 1;
+	    mySpeed -= 0.1;
 	    }
         for (i = 0; i < myObstacles.length; i += 1) {
             myObstacles[i].x += mySpeed;
