@@ -110,8 +110,8 @@ function updateGameArea() {
     if (myGameArea.pause == false) {
         myGameArea.clear();
         myGameArea.frameNo += 1;
-        for(i in MyObstacles){
-		if(i.x + i.getWidth < myGamePice.x){
+        for(i = 0; i < myObstacles.length; i += 1){
+		if(myObsticales[i].x + i.getWidth < myGamePice.x){
 			myScore += 1;
 		}
     	}
