@@ -15,6 +15,7 @@ var myGameArea;
 var myGamePiece;
 var myObstacles = [];
 var myscore;
+var mySpeed = -1;
 
 function restartGame() {
 document.getElementById("myfilter").style.display = "none";
@@ -123,9 +124,10 @@ function updateGameArea() {
             myObstacles.push(new component(10, height, "green", x, 0));
             myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
 	    myscore.score += 1;
+	    mySpeed -= 1;
 	    }
         for (i = 0; i < myObstacles.length; i += 1) {
-            myObstacles[i].x += -1;
+            myObstacles[i].x += mySpeed;
             myObstacles[i].update();
         }
         myscore.text="SCORE: " + myscore.score;        
