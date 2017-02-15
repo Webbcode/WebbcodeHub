@@ -151,11 +151,11 @@ function everyinterval(n) {
 }
 
 function moveup(e) {
-    myGamePiece.speedY = -1;
+    myGamePiece.speedY = mySpeed;
 }
 
 function movedown() {
-    myGamePiece.speedY = 1; 
+    myGamePiece.speedY = -mySpeed; 
 }
 
 function clearmove(e) {
