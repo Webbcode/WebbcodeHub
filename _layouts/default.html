@@ -15,7 +15,7 @@ var myGameArea;
 var myGamePiece;
 var myObstacles = [];
 var myscore;
-var mySpeed = -3;
+var mySpeed = -1;
 
 function restartGame() {
 document.getElementById("myfilter").style.display = "none";
@@ -63,7 +63,7 @@ function component(width, height, color, x, y, type) {
     if (type == "text") {
         this.text = color;
     }
-    this.score = -2;    
+    this.score = -3;    
     this.width = width;
     this.height = height;
     this.speedX = 0;
