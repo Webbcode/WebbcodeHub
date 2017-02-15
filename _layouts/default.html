@@ -132,7 +132,7 @@ function updateGameArea() {
         for (i = 0; i < myObstacles.length; i += 1) {
 		if(myObstacles[i].x < myGamePiece.x && myObstacles[i].notGavePoint){
 			myscore.score += 1;
-			myObsticles[i].notGavePoint = false;
+			myObstacles[i].notGavePoint = false;
 		}
             myObstacles[i].x += mySpeed;
             myObstacles[i].update();
