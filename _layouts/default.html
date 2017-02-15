@@ -64,7 +64,7 @@ function component(width, height, color, x, y, type) {
         this.text = color;
     }
     this.notGavePoint = true;
-    this.score = -4;    
+    this.score = 0;    
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -131,7 +131,7 @@ function updateGameArea() {
 	    }
         for (i = 0; i < myObstacles.length; i += 1) {
 		if(myObstacles[i].x < myGamePiece.x && myObstacles[i].notGavePoint){
-			myscore.score += 1;
+			myscore.score += 0.5;
 			myObstacles[i].notGavePoint = false;
 		}
             myObstacles[i].x += mySpeed;
