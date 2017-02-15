@@ -1,5 +1,3 @@
 h1. a few notes
 
-It is automatically transformed by "Jekyll":http://github.com/mojombo/jekyll into a static site whenever I push this repository to GitHub.
-
 The code in the static website is not made by me only edited.
