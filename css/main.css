@@ -87,12 +87,14 @@ a:visited, a:link {
 	text-decoration: none;
 	display:inline-block;
 	transition-duration: 0.4s;
+	color: rgb(0,80,0);
 }
 
 a:hover, a:active {
 	text-decoration: none;
 	display:inline-block;
 	transition-duration: 0.4s;
+	color: rgb(0,100,0);
 }
 
 menu a:visited, menu a:link {
