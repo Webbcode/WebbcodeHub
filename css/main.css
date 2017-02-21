@@ -138,3 +138,7 @@ ul.left_menu li a:hover, ul.left_menu li a:active {
 	display:inline-block;
 	padding: .1em .2em;
 }
+
+.middle {
+	vertical-align: text-top;
+}
