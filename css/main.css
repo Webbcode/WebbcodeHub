@@ -17,19 +17,19 @@ h1 {
 	font-family: Palatino, 'Palatino Linotype' , serif;
 	font-size: 2em;
 	height:1em;
-	background-color: rgb(50,50,50);
+	background-color: rgb(20,20,20);
 }
 
 h2 {
 	font-size: 1.5em;
 	color: rgb(0,255,0);
-	background-color: rgb(100,100,100);
+	background-color: rgb(40,40,40);
 }
 
 h3 {
 	font-size: 1.25em;
 	color: rgb(0,255,0);
-	background-color: rgb(150,150,150);
+	background-color: rgb(60,60,60);
 }
 
 p.main {
