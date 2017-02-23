@@ -24,6 +24,11 @@ h2 {
 	color: rgb(0,255,0);
 }
 
+h2 {
+	font-size: 1em;
+	color: rgb(0,255,0);
+}
+
 p.main {
 	font-size: 1.5em;
 	background-color:rgba(140,140,140,.6);
