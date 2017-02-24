@@ -9,6 +9,7 @@ body {
 hr {
 	margin-top: 40px;
 	border-color: rgb(0,150,0);
+	border-top: 1em;
 }
 
 h1 {
