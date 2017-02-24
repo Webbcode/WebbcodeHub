@@ -12,6 +12,10 @@ hr {
 	border-top: 1em;
 }
 
+span {
+	border-top: 1em;
+}
+
 h1 {
 	color: rgb(0,255,0);
 	text-align:center;
