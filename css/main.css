@@ -8,6 +8,7 @@ body {
 
 ul {
 	list-style-type:disk;
+	font-size:.5em;
 }
 
 hr {
