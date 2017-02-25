@@ -7,7 +7,7 @@ body {
 }
 
 ul {
-	list-style-type:disk;
+	list-style-type:none;
 	font-size:.7em;
 }
 
