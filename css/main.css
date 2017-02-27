@@ -12,6 +12,12 @@ ul {
 	text-align: left;
 }
 
+ul.change {
+	list-style-type:none;
+	font-size:.7em;
+	text-align: left;
+}
+
 hr {
 	margin-top: 40px;
 	border-color: rgb(0,150,0);
