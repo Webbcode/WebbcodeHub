@@ -136,8 +136,24 @@ a:hover, a:active {
 	font-size: 0.7em;
 }
 
+p0 a:visited, p0 a:link {
+	text-decoration: none;
+	display:inline-block;
+	transition-duration: 0.4s;
+	color: rgb(0,200,200);
+	font-size: 0.8em;
+}
+
+p0 a:hover, p0 a:active {
+	text-decoration: none;
+	display:inline-block;
+	transition-duration: 0.4s;
+	color: rgb(0,100,100);
+	font-size: 0.8em;
+}
+
 menu a:visited, menu a:link {
-	color: rgb(155,0,155);
+	color: rgb(0,155,0);
 	text-decoration: none;
 	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 	border-radius:10px;
@@ -147,7 +163,7 @@ menu a:visited, menu a:link {
 }
 
 menu a:hover, menu a:active {
-	color: rgb(105,0,105);
+	color: rgb(0,105,0);
 	background: linear-gradient(to top, rgba(0,0,0,0), rgba(60,60,60,1));
 	text-decoration: none;
 	border-radius:10px;
