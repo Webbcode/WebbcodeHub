@@ -1,3 +1,0 @@
-h1. A few notes
-
-The code in the static website is not made by me only edited.
