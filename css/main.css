@@ -12,6 +12,10 @@ ul {
 	text-align: left;
 }
 
+p2 {
+	font-size: 0.9em;
+}
+
 ul.change {
 	list-style-type:none;
 	font-size:.7em;
