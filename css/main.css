@@ -65,12 +65,24 @@ div cap {
 	color: rgb(0,200,0);
 }
 
+div.proj {
+	font-size: 1.15em;
+	color: rgb(0,200,0);
+
+	margin-left:0px;
+	margin-right:0px;
+}
+
 div.full {
 	background-color: rgb(40,40,40);
 	color:rgb(0,255,0);
 
 	margin-left:0;
 	margin-right:0;
+}
+
+div.small {
+	font-size:.95em;
 }
 
 cap {
@@ -82,16 +94,11 @@ h2 {
 	font-size: 1.9em;
 	color: rgb(0,255,0);
 	background-color: inherit;
-	margin-right:50px;
-	margin-left:50px;
 }
 
 h3 {
 	font-size: 1.25em;
 	color: rgb(0,255,0);
-
-	margin-right:50px;
-	margin-left:50px;
 }
 
 p.main {
