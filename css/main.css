@@ -13,7 +13,15 @@ ul {
 }
 
 p2 {
-	font-size: 0.9em;
+	font-size: 2em;
+}
+
+div {
+	background-color: rgb(40,40,40);
+	color:rgb(0,255,0);
+
+	margin-left:200px;
+	margin-right:200px;
 }
 
 dt {
@@ -52,17 +60,20 @@ h1 {
 	background-color: rgb(20,20,20);
 }
 
+div cap {
+	font-size: 1.04em;
+	color: rgb(0,200,0);
+}
+
 cap {
 	font-size: .8em;
 	color: rgb(0,200,0);
-	background-color: rgb(40,40,40);
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.9em;
 	color: rgb(0,255,0);
-	background-color: rgb(40,40,40);
-	
+	background-color: inherit;
 	margin-right:50px;
 	margin-left:50px;
 }
@@ -70,7 +81,6 @@ h2 {
 h3 {
 	font-size: 1.25em;
 	color: rgb(0,255,0);
-	background-color: rgb(60,60,60);
 
 	margin-right:50px;
 	margin-left:50px;
@@ -78,8 +88,7 @@ h3 {
 
 p.main {
 	font-size: 1.5em;
-	background-color:rgba(140,140,140,.6);
-	margin:.5em 10em 5em 10em;
+	margin:4px;
 }
 
 p.secondary {
