@@ -27,7 +27,6 @@ div {
 dt {
 	font-size : 1.5em;
 	text-align:left;
-	color:rgb(0,255,0);
 }
 
 dd {
@@ -98,9 +97,14 @@ h2 {
 	background-color: inherit;
 }
 
-h3{
+h3 {
 	font-size: 1.25em;
-	color: rgb(0,255,150);
+	color: rgb(0,255,0);
+}
+
+h3.proj {
+	font-size: 1.25em;
+	color:rgb(0, 255, 100);
 }
 
 p.main {
