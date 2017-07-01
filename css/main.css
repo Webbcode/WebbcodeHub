@@ -112,6 +112,12 @@ p.main {
 	margin:4px;
 }
 
+p.white {
+	font-size: 1.5em;
+	margin:4px;
+	color:white;
+}
+
 p.secondary {
 	font-size: 1.5em;
 	background-color:rgba(140,140,140,.6);
