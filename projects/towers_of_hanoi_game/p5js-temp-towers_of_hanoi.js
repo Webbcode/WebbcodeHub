@@ -27,6 +27,7 @@ function setup() {
       pegs[i] = new peg(width / 4 * i + width / 4, 20, 200, null);
     }
   }
+  sliderVal.addClass('white');
 }
 
 function resetGame(){
