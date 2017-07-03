@@ -4,7 +4,7 @@ var angSlider;
 var minSlider;
 
 function setup() {
-  createCanvas(windowWidth, 500);
+  createCanvas(windowWidth, 300);
   
   minSlider = createSlider(2, 99, 4, 1);
   angSlider = createSlider(0.001, 0.1, 0.01, 0.001);
