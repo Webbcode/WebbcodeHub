@@ -19,7 +19,7 @@ function draw() {
   background(51);
   translate(width / 2, height);
   stroke(255);
-  branch(lenSlider.value());
+  branch(100);
 }
 
 function branch(len){
