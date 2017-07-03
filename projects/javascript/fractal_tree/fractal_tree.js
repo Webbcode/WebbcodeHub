@@ -6,7 +6,7 @@ var len = 100;
 var lenSlider;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, 500);
   
   minSlider = createSlider(2, 99, 4, 1);
   angSlider = createSlider(0.001, 0.1, 0.01, 0.001);
@@ -19,7 +19,7 @@ function draw() {
   angle += angSlider.value();
   minLen = minSlider.value();
   
-  background(0);
+  background(51);
   translate(width / 2, height);
   stroke(255);
   branch(lenSlider.value());
