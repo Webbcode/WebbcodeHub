@@ -2,15 +2,12 @@ var angle;
 var minLen = 4;
 var angSlider;
 var minSlider;
-var len = 100;
-var lenSlider;
 
 function setup() {
   createCanvas(windowWidth, 500);
   
   minSlider = createSlider(2, 99, 4, 1);
   angSlider = createSlider(0.001, 0.1, 0.01, 0.001);
-  lenSlider = createSlider(50, 250, 100, 1);
   
   angle = radians(90);
 }
@@ -28,7 +25,7 @@ function draw() {
 function branch(len){
   line(0, 0, 0, -len);
   translate(0, -len);
-  if(len > minLen){
+  if(len > 4){
     push();
     rotate(angle);
     branch(len * 0.67);
