@@ -27,7 +27,6 @@ function setup() {
       pegs[i] = new peg(width / 4 * i + width / 4, 20, 200, null);
     }
   }
-  
   sliderVal.addClass('white');
 }
 
@@ -70,8 +69,7 @@ function draw() {
   text(moves, width / 2 - size / 2 * moves.toString().length / 2, 50);
   
   
-  sliderVal.html(slider.value());
-  
+  sliderVal.html('rings: ' + slider.value());
 }
 
 function mousePressed(){
