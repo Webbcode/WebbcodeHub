@@ -2,6 +2,7 @@ var pac;
 var ghost;
 var pacImg = [];
 var pacLImg = [];
+var ghostImg = [];
 
 function setup() {
   createCanvas(windowWidth,60);
@@ -14,6 +15,9 @@ function setup() {
   
   pacLImg[0] = loadImage('https://webbcode.github.io/retro-imgs/pacmanclose.png');
   pacLImg[1] = loadImage('https://webbcode.github.io/retro-imgs/pacmanlopen.png');
+  
+  ghostImg[0] = loadImage('https://webbcode.github.io/retro-imgs/Pac-Man-Ghost-PNG-Clipart[1].png');
+  ghostImg[1] = loadImage('https://webbcode.github.io/retro-imgs/ChangeColor_28-8-2017-5-54-45[1].jpg');
 }
 
 function draw() {
@@ -75,8 +79,11 @@ function entit2(x,y, tcolor){
   }
   
   this.display = function(){
-    fill(this.tcolor);
-    rect(this.x, this.y, 32, 32);
+    if(this.dir === 1){
+      image(ghostImg[0],this.x, this.y, 32, 32);
+    }else{
+      image(ghostImg[1],this.x, this.y, 32, 32);
+    }
   }
 }
 
