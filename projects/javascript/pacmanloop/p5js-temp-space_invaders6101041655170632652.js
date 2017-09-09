@@ -26,7 +26,7 @@ function draw() {
     
     textSize(32);
     fill(255);
-    invadBuffer.text("Press any key to continue", width / 2 - 32 * 25 / 4, height / 2);
+    text("Press any key to continue", width / 2 - 32 * 25 / 4, height / 2);
     
 //     stroke(255);
 //     line(0, height / 2, width, height / 2);
