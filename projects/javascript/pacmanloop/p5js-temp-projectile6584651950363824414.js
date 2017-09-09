@@ -29,7 +29,7 @@ function proj(x, y){
       return;
     }
     fill(255);
-    arc(this.x , this.y, 10, 10, 0, TWO_PI);
+    invadBuffer.arc(this.x , this.y, 10, 10, 0, TWO_PI);
   }
   
 }
