@@ -23,6 +23,16 @@
     p.setup = function(){
       p.createCanvas(windowWidth, windowHeight);
       p.background(0);
+      
+      
+  
+  
+  
+  for(var i = 0;i < invadNum;i++){
+    invaders[i] = new invader((i % 10) * 40 + 16, floor(i / 10) * 40 + 16);
+  }
+  
+  spaceship = new ship(width / 2 - 16, height - 32);
     }
   };
   new p5(sketch, 'container');
