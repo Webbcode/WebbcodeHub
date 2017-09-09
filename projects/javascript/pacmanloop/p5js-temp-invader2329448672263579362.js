@@ -70,6 +70,6 @@ function invader(x, y){
     if(this.dead){
       return;
     }
-    invadBuffer.rect(this.x, this.y, this.w, this.w);
+    rect(this.x, this.y, this.w, this.w);
   }
 }
