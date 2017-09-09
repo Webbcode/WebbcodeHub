@@ -28,7 +28,7 @@ function ship(x, y){
   }
   
   this.disp = function(){
-    invadBuffer.rect(this.x, this.y, 32, 10);
+    rect(this.x, this.y, 32, 10);
     
     for(var i = 0; i < this.projs.length;i++){
       this.projs[i].disp();
