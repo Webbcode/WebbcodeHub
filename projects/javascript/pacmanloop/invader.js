@@ -10,9 +10,9 @@ function invader(x, y){
   this.dead = false;
   this.addedP = false;
   
-  this.path[0] = (width - 64 - 11 * this.w - this.w / 2);
+  this.path[0] = (width - this.w * 2 - 11 * this.w - this.w / 2);
   this.path[1] = this.w / 2 + this.w / 4;
-  this.path[2] = -(width - 64 - 11 * this.w - this.w / 2);
+  this.path[2] = -(width - this.w * 2 - 11 * this.w - this.w / 2);
   this.path[3] = this.w / 2 + this.w / 4;
   
   this.tP = this.path[this.pathPos] + this.x;
