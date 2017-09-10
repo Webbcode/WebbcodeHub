@@ -1,7 +1,7 @@
 var invaders = [];
 var invadNum = 50;
 var spaceship;
-var canvas;
+var canva;
 
 function setup() {
   
@@ -16,9 +16,9 @@ function setup() {
 
 function draw() {
   if(!canvas){
-    canvas = document.getElementById("defaultCanvas0");
+    canva = document.getElementById("defaultCanvas0");
     
-    resizeCanvas(windowWidth, windowHeight);
+    canva.resizeCanvas(windowWidth, windowHeight);
   }else{
     return;
   }
