@@ -71,7 +71,7 @@
       }else if(state === 2){
       state = 1;
       for(var i = 0;i < invadNum;i++){
-        invaders[i] = new invader((i % 10) * 40 + 16, floor(i / 10) * 40 + 16);
+        invaders[i] = new invader((i % 10) * (invadW + invadW / 4) + invadW / 2, floor(i / 10) * (invadW + invadW / 4) + invadW / 2);
       }
       spaceship = new ship(width / 2 - 16, height - 32);
       score = 0;
@@ -79,7 +79,7 @@
       state = 1;
       
       for(var i = 0;i < invadNum;i++){
-        invaders[i] = new invader((i % 10) * 40 + 16, floor(i / 10) * 40 + 16);
+        invaders[i] = new invader((i % 10) * (invadW + invadW / 4) + invadW / 2, floor(i / 10) * (invadW + invadW / 4) + invadW / 2);
       }
       spaceship = new ship(width / 2 - 16, height - 32);
     }
