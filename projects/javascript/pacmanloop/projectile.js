@@ -17,7 +17,7 @@ function proj(x, y){
     
     for ( var i = 0; i < invaders.length;i++){
       inv = invaders[i]
-      if(collideRectCircle(inv.x, inv.y, 32, 32, this.x, this.y, 10) && inv.dead === false){
+      if(collideRectCircle(inv.x, inv.y, invadW, invadW, this.x, this.y, 10) && inv.dead === false){
         inv.dead = true;
         this.dead = true;
       }
