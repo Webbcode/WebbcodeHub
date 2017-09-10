@@ -1,9 +1,9 @@
 var deadNum = 0;
-
+var invadW = 16
 function invader(x, y){
   this.x = x;
   this.y = y;
-  this.w = 16;
+  this.w = invadW;
   this.speed = 1.5;
   this.path = [];
   this.pathPos = 0;
