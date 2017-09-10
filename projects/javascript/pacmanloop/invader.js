@@ -3,17 +3,17 @@ var deadNum = 0;
 function invader(x, y){
   this.x = x;
   this.y = y;
-  this.w = 32;
+  this.w = 16;
   this.speed = 1.5;
   this.path = [];
   this.pathPos = 0;
   this.dead = false;
   this.addedP = false;
   
-  this.path[0] = (width - 64 - 11 * 32 - 16);
-  this.path[1] = this.w / 2 + 8;
-  this.path[2] = -(width - 64 - 11 * 32 - 16);
-  this.path[3] = this.w / 2 + 8;
+  this.path[0] = (width - 64 - 11 * this.w - this.w / 2);
+  this.path[1] = this.w / 2 + this.w / 4;
+  this.path[2] = -(width - 64 - 11 * this.w - this.w / 2);
+  this.path[3] = this.w / 2 + this.w / 4;
   
   this.tP = this.path[this.pathPos] + this.x;
   
@@ -65,6 +65,6 @@ function invader(x, y){
     if(this.dead){
       return;
     }
-    rect(this.x, this.y, 32, 32);
+    rect(this.x, this.y, this.w, this.w);
   }
 }
