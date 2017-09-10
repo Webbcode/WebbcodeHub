@@ -26,7 +26,7 @@
     function setup() {
       createCanvas(windowWidth, windowHeight);
       for(var i = 0;i < invadNum;i++){
-        invaders[i] = new invader((i % 10) * 40 + invader.w / 2, floor(i / 10) * 40 + invader.w / 2);
+        invaders[i] = new invader((i % 10) * 40 + invadW / 2, floor(i / 10) * 40 + invadW / 2);
       }
       spaceship = new ship(width / 2 - 16, height - 32);
     }
