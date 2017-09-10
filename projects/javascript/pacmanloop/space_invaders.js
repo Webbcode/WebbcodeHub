@@ -22,7 +22,7 @@ function draw() {
   }else{
     return;
   }
-  background(0, 0, 0);
+  canva.background(0, 0, 0);
   
   for (var i = 0;i < invadNum;i++){
     
