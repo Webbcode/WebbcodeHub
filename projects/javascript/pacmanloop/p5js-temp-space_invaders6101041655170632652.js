@@ -1,5 +1,5 @@
 var invaders = [];
-var invadNum = 50;
+var invadNum = 100;
 var projectiles = [];
 var spaceship;
 var state = 0;
