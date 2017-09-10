@@ -4,6 +4,7 @@ var spaceship;
 var canva;
 
 function setup() {
+  createCanvas(windowWidth, windowHeight);
   
   for(var i = 0;i < invadNum;i++){
     invaders[i] = new invader((i % 10) * 40 + 16, floor(i / 10) * 40 + 16);
@@ -15,14 +16,8 @@ function setup() {
 }
 
 function draw() {
-  if(!canvas){
-    canva = document.getElementById("defaultCanvas0");
-    
-    canva.resizeCanvas(windowWidth, windowHeight);
-  }else{
-    return;
-  }
-  canva.background(0, 0, 0);
+  
+  background(0, 0, 0);
   
   for (var i = 0;i < invadNum;i++){
     
