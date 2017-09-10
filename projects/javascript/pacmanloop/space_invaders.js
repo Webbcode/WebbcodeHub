@@ -3,7 +3,6 @@ var invadNum = 50;
 var spaceship;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
   
   for(var i = 0;i < invadNum;i++){
     invaders[i] = new invader((i % 10) * 40 + 16, floor(i / 10) * 40 + 16);
@@ -15,6 +14,11 @@ function setup() {
 }
 
 function draw() {
+  if(width !== windowWidth){
+    resizeCanvas(windowWidth, windowHeight);
+  }else{
+    return;
+  }
   background(0, 0, 0);
   
   for (var i = 0;i < invadNum;i++){
