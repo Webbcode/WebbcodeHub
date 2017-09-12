@@ -27,6 +27,8 @@ function invader(x, y){
       return;
     }
     
+    if(this.y >= height - this.w * 2
+    
     if(this.pathPos % 2 === 0){
       if(abs(this.x - this.tP) <=3){
         this.x = this.tP;
