@@ -17,11 +17,19 @@ p2 {
 }
 
 div {
-	background-color: rgb(40,40,40);
+	background-color: rgb(0,100,255);
 	color:rgb(0,255,0);
 
-	margin-left:200px;
-	margin-right:200px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+div.main1 {
+	background-color: rgb(0,100,255);
+	color:rgb(0,255,0);
+
+	margin-left:0px;
+	margin-right:0px;
 }
 
 dt {
