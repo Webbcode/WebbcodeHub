@@ -37,7 +37,7 @@ dt {
 	text-align:left;
 }
 
-dd {
+.main1 dd {
 	font-size : 0.9em;
 	text-align:left;
 	color:rgb(0, 255, 0);
@@ -99,9 +99,27 @@ cap {
 	color: rgb(0,200,0);
 }
 
-h2 {
+.main1 h2 {
 	font-size: 1.9em;
-	color: rgb(0,255,0);
+	color: rgb(0,0,0);
+	background-color: inherit;
+}
+
+.main2 h2 {
+	font-size: 1.9em;
+	color: #FFF;
+	background-color: inherit;
+}
+
+.main1 h3 {
+	font-size: 1.25em;
+	color: rgb(0,0,0);
+	background-color: inherit;
+}
+
+.main2 h3 {
+	font-size: 1.25em;
+	color: #FFF;
 	background-color: inherit;
 }
 
@@ -109,16 +127,6 @@ h2 {
 	font-size: 1.9em;
 	color: rgb(0,255,0);
 	background-color: inherit;
-}
-
-h3 {
-	font-size: 1.25em;
-	color: rgb(0,255,0);
-}
-
-h3.proj {
-	font-size: 1.25em;
-	color:rgb(0, 255, 100);
 }
 
 p.main {
@@ -198,23 +206,37 @@ a:hover, a:active {
 	font-size: 0.7em;
 }
 
-p0 a:visited, p0 a:link {
+p a:visited, p a:link {
+	color: rgb(0,200,200);
 	text-decoration: none;
 	display:inline-block;
-	transition-duration: 0.4s;
-	color: rgb(0,200,200);
-	font-size: 0.8em;
+	padding: .1em .2em;
 }
 
-p0 a:hover, p0 a:active {
+p a:hover, p a:active {
+	background:#559;
+	color: rgb(0,0,0);
 	text-decoration: none;
 	display:inline-block;
-	transition-duration: 0.4s;
-	color: rgb(0,100,100);
-	font-size: 0.8em;
+	padding: .1em .2em;
 }
 
 .menu a:visited, .menu a:link {
+	color: rgb(0,200,200);
+	text-decoration: none;
+	display:inline-block;
+	padding: .1em .2em;
+}
+
+.main1 a:hover, .mmain1 a:active {
+	background:#559;
+	color: rgb(0,0,0);
+	text-decoration: none;
+	display:inline-block;
+	padding: .1em .2em;
+}
+
+.main1 a:visited, .main1 a:link {
 	color: rgb(0,200,200);
 	text-decoration: none;
 	display:inline-block;
