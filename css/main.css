@@ -25,7 +25,7 @@ div {
 }
 
 div.main1 {
-	background-color: rgb(0,100,255);
+	background-color: #626280;
 	color:rgb(0,255,0);
 
 	margin-left:0px;
@@ -61,12 +61,11 @@ span {
 }
 
 h1 {
-	color: rgb(0,255,0);
+	color: rgb(255,255,255);
 	text-align:center;
 	font-family: Palatino, 'Palatino Linotype' , serif;
 	font-size: 2em;
-	height:1em;
-	background-color: rgb(20,20,20);
+	height:auto;
 }
 
 div cap {
@@ -82,16 +81,17 @@ div.proj {
 	margin-right:0px;
 }
 
-div.full {
-	background-color: rgb(40,40,40);
-	color:rgb(0,255,0);
-
-	margin-left:0;
-	margin-right:0;
-}
-
 div.small {
 	font-size:.95em;
+}
+
+div.menu {
+	background-color:#626280;
+	color:rgb(0,0,0);
+	height:auto;
+	margin-left:0px;
+	margin-right:0px;
+	font-size:2em;
 }
 
 cap {
@@ -100,6 +100,12 @@ cap {
 }
 
 h2 {
+	font-size: 1.9em;
+	color: rgb(0,255,0);
+	background-color: inherit;
+}
+
+.menu h2{
 	font-size: 1.9em;
 	color: rgb(0,255,0);
 	background-color: inherit;
@@ -160,14 +166,6 @@ ul.right_menu{
 	padding:10px 20px 5px 20px;
 }
 
-menu {
-	color: rgb(0,0,0);
-	text-align:center;
-	font-family: Palatino, 'Palatino Linotype' , serif;
-	font-size: 2em;
-	height:1.3em;
-}
-
 blank {
 	
 	margin:5em 5em 5em 5em;
@@ -216,23 +214,18 @@ p0 a:hover, p0 a:active {
 	font-size: 0.8em;
 }
 
-menu a:visited, menu a:link {
-	color: rgb(0,155,0);
+.menu a:visited, .menu a:link {
+	color: rgb(0,200,200);
 	text-decoration: none;
-	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
-	border-radius:10px;
 	display:inline-block;
-	border:.1em solid rgba(255,255,255,.5);
 	padding: .1em .2em;
 }
 
-menu a:hover, menu a:active {
-	color: rgb(0,105,0);
-	background: linear-gradient(to top, rgba(0,0,0,0), rgba(60,60,60,1));
+.menu a:hover, .menu a:active {
+	background:#559;
+	color: rgb(0,0,0);
 	text-decoration: none;
-	border-radius:10px;
 	display:inline-block;
-	border:.1em solid rgb(0,0,0);
 	padding: .1em .2em;
 }
 
