@@ -32,6 +32,14 @@ div.main1 {
 	margin-right:0px;
 }
 
+div.main2 {
+	background-color: #000;
+	color:rgb(255,255,255);
+
+	margin-left:0px;
+	margin-right:0px;
+}
+
 dt {
 	font-size : 1.5em;
 	text-align:left;
@@ -71,18 +79,6 @@ h1 {
 div cap {
 	font-size: 1.04em;
 	color: rgb(0,200,0);
-}
-
-div.proj {
-	font-size: 1.15em;
-	color: rgb(0,200,0);
-
-	margin-left:0px;
-	margin-right:0px;
-}
-
-div.small {
-	font-size:.95em;
 }
 
 div.menu {
