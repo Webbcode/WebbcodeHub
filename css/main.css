@@ -217,13 +217,6 @@ p a:hover, p a:active {
 	padding: .1em .2em;
 }
 
-.menu a:visited, .menu a:link {
-	color: rgb(0,200,200);
-	text-decoration: none;
-	display:inline-block;
-	padding: .1em .2em;
-}
-
 .main1 a:hover, .mmain1 a:active {
 	background:#559;
 	color: rgb(0,0,0);
@@ -233,6 +226,30 @@ p a:hover, p a:active {
 }
 
 .main1 a:visited, .main1 a:link {
+	color: rgb(0,200,200);
+	text-decoration: none;
+	display:inline-block;
+	padding: .1em .2em;
+}
+
+a.larger:hover, a.larger:active {
+	background:#559;
+	color: rgb(0,200,200);
+	text-decoration: none;
+	display:inline-block;
+	font-size:.9em;
+	padding: .1em .2em;
+}
+
+a.larger:visited,  a.larger:link {
+	color: rgb(0,200,200);
+	text-decoration: none;
+	display:inline-block;
+	font-size:.9em;
+	padding: .1em .2em;
+}
+
+.menu a:visited, .menu a:link {
 	color: rgb(0,200,200);
 	text-decoration: none;
 	display:inline-block;
