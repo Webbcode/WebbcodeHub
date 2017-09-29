@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  angle += angSlider.value();
+  angle -= angSlider.value();
   
   background(51);
   translate(width / 2, height);
