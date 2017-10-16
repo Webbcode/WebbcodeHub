@@ -4,7 +4,7 @@ var angSlider;
 function setup() {
   createCanvas(windowWidth, 500);
   
-  angSlider = createSlider(0.001, 0.1, 0.01, 0.001);
+  angSlider = createSlider(0, 0.1, 0.01, 0.001);
   
   angle = radians(90);
 }
