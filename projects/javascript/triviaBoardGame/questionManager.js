@@ -1,4 +1,3 @@
-var cPY = 200;
 var qs = ["Points that do not lie on the same line are", "points that lie on the same plane are", "points not in the same plane are", "Something that cuts an object into two equal parts are", "A part of a line with two endpoints are", "A figure formed by two rays with a common endpoint is", "Basic unit of matter.", "The center of an atom which contains protons and neutrons.", "Substance consisting entirely of one type of atom.", "Substance formed by the chemical combination of two or more elements in definite proportions.", "Bond formed when one or more electrons are transferred from one atom to another.", "Bond formed by sharing electrons.", "Measurement system used to indicate the concentration of hydrogen ions in solution. Ranges from 0-14."];
 var ans = [["noncolplanar", "noncollinear", "line", "planar"], ["coplanar", "noncollinear", "line", "none of these"], ["noncoplanar", "collinear", "line", "none of these"], ["perpendicular", "line", "bisector", "none of these"], ["line segment", "vector", "ray", "angle"], ["none of these", "ray", "line segment", "angle"], ["Compound", "Element", "Atom", "Ion"], ["Neucleus", "Center", "Atom", "N"], ["Element", "Atom", "Ion", "Compound"], ["Compound", "Ionic bond", "Ion", "Element"], ["Covalent bond", "Ionic bond", "Ion", "Element"], ["Covalent bond", "Ionic bond", "Ion", "Element"], ["Acid", "Base", "pH Scale", "Compound"]];
 var qNum = 0;
@@ -14,47 +13,47 @@ var pN;
 
 var qM = function(){
   qV = createInput( qs[qNum]);
-  qV.position((4 + 2) * 30,0 + cPY);
+  qV.position((4 + 2) * 30 + cPX,0 + cPY);
   
-  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1, 10 + cPY);
+  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1 + cPX, 10 + cPY);
 
   prev = createButton('previous question');
   prev.mousePressed(prevQ);
-  prev.position((4 + 2) * 20/ 2, 0 + cPY);
+  prev.position((4 + 2) * 20/ 2 + cPX, 0 + cPY);
   
   next = createButton('next question');
   next.mousePressed(nextQ);
-  next.position((4 + 2) * 57 - 1, 0 + cPY);
+  next.position((4 + 2) * 57 - 1 + cPX, 0 + cPY);
   
   saveQB = createButton('save question');
   saveQB.mousePressed(saveQ);
-  saveQB.position(206, 118 + cPY);
+  saveQB.position(206 + cPX, 118 + cPY);
   
   for(var i = 0;i < 4;i++){
     aB[i] = createButton('set to be correct >>>');
     aV[i] = createInput( ans[ qNum][i]);
-    aV[i].position((4 + 2) * 23,30 + 22 * i + cPY);
+    aV[i].position((4 + 2) * 23 + cPX,30 + 22 * i + cPY);
   }
   
   aB[0].mousePressed(aa);
-  aB[0].position(0,30 + cPY);
+  aB[0].position(0 + cPX,30 + cPY);
   
   aB[1].mousePressed(ba);
-  aB[1].position(0,52 + cPY);
+  aB[1].position(0 + cPX,52 + cPY);
   
   aB[2].mousePressed(ca);
-  aB[2].position(0,74 + cPY);
+  aB[2].position(0 + cPX,74 + cPY);
   
   aB[3].mousePressed(da);
-  aB[3].position(0,96 + cPY);
+  aB[3].position(0 + cPX,96 + cPY);
   
   addQB = createButton('add question');
   addQB.mousePressed(addQ);
-  addQB.position(0,118 + cPY);
+  addQB.position(0 + cPX,118 + cPY);
   
   removeQB = createButton('remove question');
   removeQB.mousePressed(removeQ);
-  removeQB.position(92,118 + cPY);
+  removeQB.position(92 + cPX,118 + cPY);
   
   qV.hide();
   prev.hide();
@@ -126,48 +125,48 @@ var nextQ = function(){
   
   removeElements();
   
-  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1, 10 + cPY);
+  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1 + cPX, 10 + cPY);
   
    qV = createInput( qs[qNum]);
-  qV.position((4 + 2) * 30,0 + cPY);
+  qV.position((4 + 2) * 30 + cPX,0 + cPY);
 
   prev = createButton('previous question');
   prev.mousePressed(prevQ);
-  prev.position((4 + 2) * 20/ 2, 0 + cPY);
+  prev.position((4 + 2) * 20/ 2 + cPX, 0 + cPY);
   
   next = createButton('next question');
   next.mousePressed(nextQ);
-  next.position((4 + 2) * 57 - 1, 0 + cPY);
+  next.position((4 + 2) * 57 - 1 + cPX, 0 + cPY);
   
   saveQB = createButton('save question');
   saveQB.mousePressed(saveQ);
-  saveQB.position(206, 118 + cPY);
+  saveQB.position(206 + cPX, 118 + cPY);
   
   for(var i = 0;i < 4;i++){
     aB[i] = createButton('set to be correct >>>');
     aV[i] = createInput( ans[ qNum][i]);
-    aV[i].position((4 + 2) * 23,30 + 22 * i + cPY);
+    aV[i].position((4 + 2) * 23 + cPX,30 + 22 * i + cPY);
   }
   
   aB[0].mousePressed(aa);
-  aB[0].position(0,30 + cPY);
+  aB[0].position(0 + cPX,30 + cPY);
   
   aB[1].mousePressed(ba);
-  aB[1].position(0,52 + cPY);
+  aB[1].position(0 + cPX,52 + cPY);
   
   aB[2].mousePressed(ca);
-  aB[2].position(0,74 + cPY);
+  aB[2].position(0 + cPX,74 + cPY);
   
   aB[3].mousePressed(da);
-  aB[3].position(0,96 + cPY);
+  aB[3].position(0 + cPX,96 + cPY);
   
   addQB = createButton('add question');
   addQB.mousePressed(addQ);
-  addQB.position(0,118 + cPY);
+  addQB.position(0 + cPX,118 + cPY);
   
   removeQB = createButton('remove question');
   removeQB.mousePressed(removeQ);
-  removeQB.position(92,118 + cPY);
+  removeQB.position(92 + cPX,118 + cPY);
   
 }
 
@@ -181,48 +180,48 @@ var prevQ = function(){
   
   removeElements();
   
-  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1, 10 + cPY);
+  pN = createP(qNum + "/" + (qAmt - 1)).position((4 + 2) * 57 - 1 + cPX, 10 + cPY);
   
   qV = createInput( qs[qNum]);
-  qV.position((4 + 2) * 30,0 + cPY);
+  qV.position((4 + 2) * 30 + cPX,0 + cPY);
 
   prev = createButton('previous question');
   prev.mousePressed(prevQ);
-  prev.position((4 + 2) * 20/ 2, 0 + cPY);
+  prev.position((4 + 2) * 20/ 2 + cPX, 0 + cPY);
   
   next = createButton('next question');
   next.mousePressed(nextQ);
-  next.position((4 + 2) * 57 - 1, 0 + cPY);
+  next.position((4 + 2) * 57 - 1 + cPX, 0 + cPY);
   
   saveQB = createButton('save question');
   saveQB.mousePressed(saveQ);
-  saveQB.position(206, 118 + cPY);
+  saveQB.position(206 + cPX, 118 + cPY);
   
   for(var i = 0;i < 4;i++){
     aB[i] = createButton('set to be correct >>>');
     aV[i] = createInput( ans[ qNum][i]);
-    aV[i].position((4 + 2) * 23,30 + 22 * i + cPY);
+    aV[i].position((4 + 2) * 23 + cPX,30 + 22 * i + cPY);
   }
   
   aB[0].mousePressed(aa);
-  aB[0].position(0,30 + cPY);
+  aB[0].position(0 + cPX,30 + cPY);
   
   aB[1].mousePressed(ba);
-  aB[1].position(0,52 + cPY);
+  aB[1].position(0 + cPX,52 + cPY);
   
   aB[2].mousePressed(ca);
-  aB[2].position(0,74 + cPY);
+  aB[2].position(0 + cPX,74 + cPY);
   
   aB[3].mousePressed(da);
-  aB[3].position(0,96 + cPY);
+  aB[3].position(0 + cPX,96 + cPY);
   
   addQB = createButton('add question');
   addQB.mousePressed(addQ);
-  addQB.position(0,118 + cPY);
+  addQB.position(0 + cPX,118 + cPY);
   
   removeQB = createButton('remove question');
   removeQB.mousePressed(removeQ);
-  removeQB.position(92,118 + cPY);
+  removeQB.position(92 + cPX,118 + cPY);
 }
 
 var aa = function(){

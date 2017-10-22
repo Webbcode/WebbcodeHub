@@ -1,5 +1,6 @@
 var tileWidth;
 var cPY = 200;
+var cPX = window.innerWidth / 2 - 6 * 32;
 var level;
 var tileType;
 var tileImgs = [];
@@ -130,7 +131,8 @@ var mS = new state(function(){
 });
 
 function setup() {
-  createCanvas(12 * 32, 12 * 32);
+  createCanvas(12 * 32, 12 * 32).position(windowWidth / 2 - 6 * 32, 200);
+  cPX = windowWidth / 2 - 6 * 32;
   tileWidth = 32;
   
   qM();
