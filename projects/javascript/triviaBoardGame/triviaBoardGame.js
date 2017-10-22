@@ -131,7 +131,8 @@ var mS = new state(function(){
 });
 
 function setup() {
-  createCanvas(12 * 32, 12 * 32).position(windowWidth / 2 - 6 * 32, 200);
+  createDiv(" ").position(0, windowHeight + 90);
+  createCanvas(12 * 32, 12 * 32).position(cPX, cPY);
   cPX = windowWidth / 2 - 6 * 32;
   tileWidth = 32;
   
@@ -149,11 +150,14 @@ function setup() {
       
       questionNum = ceil(random() * questions.length) - 1;
       
-      question = createP(questions[questionNum]);
+      question = createP(questions[questionNum]).position(cPX, cPY + height + 10);
       
       for(var i = 0; i < 4;i++){
-        answerArray[i] = createButton(answers[questionNum][i]);
-        
+        if(i !== 0){
+        answerArray[i] = createButton(answers[questionNum][i]).position(answerArray[i - 1].size().width + answerArray[i - 1].position().x, cPY + height + 50);
+        }else{
+          answerArray[i] = createButton(answers[questionNum][i]).position(cPX, cPY + height + 50);
+        }
         answerArray[i].mousePressed(fA[i]);
         
         moveNum = floor(random() * 5) + 1;
@@ -169,7 +173,7 @@ function setup() {
   
   level = new level();
   
-  difficulty = createButton('change to medium');
+  difficulty = createButton('change to medium').position(0 + cPX, 17 * 32 + cPY);
   difficulty.mousePressed(difficultyChange);
   difficulty.hide();
 }
@@ -326,7 +330,7 @@ function difficultyChange(){
   difficulty.remove();
   difficulty = createButton('change to hard');
   difficulty.mousePressed(difficultyChangeA);
-  difficulty.position(0, 17 * 32 + cPY);
+  difficulty.position(0 + cPX, 17 * 32 + cPY);
 }
 
 function difficultyChangeA(){
@@ -334,7 +338,7 @@ function difficultyChangeA(){
   difficulty.remove();
   difficulty = createButton('change to easy');
   difficulty.mousePressed(difficultyChangeB);
-  difficulty.position(0, 17 * 32 + cPY);
+  difficulty.position(0 + cPX, 17 * 32 + cPY);
 }
 
 function difficultyChangeB(){
@@ -342,7 +346,7 @@ function difficultyChangeB(){
   difficulty.remove();
   difficulty = createButton('change to medium');
   difficulty.mousePressed(difficultyChange);
-  difficulty.position(0, 17 * 32 + cPY);
+  difficulty.position(0 + cPX, 17 * 32 + cPY);
 }
 
 var sM = new stateManager(mS);
