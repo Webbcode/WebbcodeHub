@@ -152,6 +152,8 @@ function setup() {
       
       question = createP(questions[questionNum]).position(cPX, cPY + height + 10);
       
+      question.style("color", "#FFFFFF");
+      
       for(var i = 0; i < 4;i++){
         if(i !== 0){
         answerArray[i] = createButton(answers[questionNum][i]).position(answerArray[i - 1].size().width + answerArray[i - 1].position().x, cPY + height + 50);
