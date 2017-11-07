@@ -40,12 +40,14 @@ div.main2 {
 	margin-right:0px;
 }
 
-img.TwichImg {
-	float:left;
-	width:50;
+img.TwichIcon {
+	background:rgba(0,0,0,0);
+	width:50px;
 }
 
 div.bottom {
+	width:100%;
+	background-color:rgb(77,77,77);
 	position:absolute;
 	bottom:0px;
 }
