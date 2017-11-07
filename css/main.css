@@ -40,6 +40,16 @@ div.main2 {
 	margin-right:0px;
 }
 
+img.TwichImg {
+	float:left;
+	width:50;
+}
+
+div.bottom {
+	position:absolute;
+	bottom:0px;
+}
+
 dt {
 	font-size : 1.5em;
 	text-align:left;
