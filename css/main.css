@@ -48,8 +48,9 @@ img.TwichIcon {
 div.bottom {
 	width:100%;
 	background-color:rgb(77,77,77);
-	position:absolute;
+	position:fixed;
 	bottom:0px;
+	height:50;
 }
 
 dt {
@@ -296,4 +297,18 @@ ul.left_menu li a:hover, ul.left_menu li a:active {
 
 .middle {
 	vertical-align: middle;
+}
+
+div.main1b {
+	padding:0px 0px 50px 0px;
+	
+	background-color: #626280;
+	color:rgb(0,255,0);
+}
+
+div.main2b {
+	padding:0px 0px 50px 0px;
+	
+	background-color: #000000;
+	color:rgb(0,255,0);
 }
