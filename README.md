@@ -10,5 +10,5 @@
 
 |  Day |Stream type| Rough Start Time |
 |------|:---------:|:----------------:|
-|Sunday| Standard  |      12:00 AM    |
 |Friday| Standard  |      4:00 PM     |
+|Sunday| Standard  |      12:00 AM    |
