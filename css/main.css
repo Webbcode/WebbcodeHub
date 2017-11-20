@@ -314,3 +314,7 @@ div.main2b {
 button {
 	margin:0px 0px 50px;
 }
+
+input[type='range']{
+	margin:0px 0px 50px;
+}
